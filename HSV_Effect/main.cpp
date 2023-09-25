@@ -165,8 +165,10 @@ HWND CreateWin32Window(HINSTANCE hInstance, GLRenderer *renderer)
     AppClassName,
     AppName,
     NO_WINDOW_RESIZE,
-    windowRect.left,
-    windowRect.top,
+    /*windowRect.left,
+    windowRect.top,*/
+    CW_USEDEFAULT,
+    CW_USEDEFAULT,
     windowRect.right - windowRect.left,
     windowRect.bottom - windowRect.top,
     nullptr,
